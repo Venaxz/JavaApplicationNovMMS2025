@@ -7,5 +7,9 @@ public class TypeCasting{
 		
 		int convertedNumber = (int)number;
 		System.out.printf("The quantity is %d%n",convertedNumber);
+		
+		char symbol = '?';
+		int convertedSymbol = (int)symbol;
+		System.out.printf("ASCII code for ? is %d%n",convertedSymbol);
 	}
 }
