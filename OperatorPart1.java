@@ -23,7 +23,7 @@ public class OperatorPart1{
 		int remainder = num1 % num2;
 		System.out.printf("The remainder of %d %% %d = %d%n" ,num1 ,num2,remainder);
 		
-		//Compond Assignment Operator
+		//Compound Assignment Operator
 		num1 += num2;
 		System.out.printf("The value of num1 has been updated to %d%n",num1);
 		
