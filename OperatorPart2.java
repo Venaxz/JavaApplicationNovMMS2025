@@ -30,6 +30,5 @@ public class OperatorPart2{
     System.out.printf("The value of x is %d%n",--x);
 	System.out.printf("The value of y is %d%n",y--);
 	System.out.printf("The current value of y is %d%n",y);
-	//
 	}
 }

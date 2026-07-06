@@ -4,7 +4,6 @@ public class SingleSelectionStatement{
 		
 		if (age >= 18){
              System.out.printf("You are %d years old. Oh wow you are now an adult",age);
-			 //
 		}			
 	}
 }
