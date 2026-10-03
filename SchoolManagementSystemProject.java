@@ -46,4 +46,4 @@ public class SchoolManagementSystemProject{
     System.out.println("Department: " + department);
     System.out.println("Level: " + level);
 	}
-}
+} 
