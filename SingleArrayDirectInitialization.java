@@ -18,4 +18,4 @@ public class SingleArrayDirectInitialization{
 			System.out.printf("Element at %d is %d%n",i,numbers[i]);
 		}
 	}
-}
+} 
