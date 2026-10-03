@@ -63,6 +63,6 @@ public class OperatorPart1{
 		System.out.printf("Is %d != %d ? %b%n",num3,num4,isNotEqual);
 
 		
-	}
+	} 
 }
 
