@@ -16,4 +16,4 @@ public class SingleArrayDirectInitializationClassWork{
         System.out.println("Even numbers = " + countEvenNumbers);
         System.out.println("Odd numbers = " + countOddNumbers);
     }
-}
+} 
