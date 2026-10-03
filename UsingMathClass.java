@@ -15,4 +15,4 @@ public class UsingMathClass{
 		System.out.println("The minimum between 6 and 25 is " +Math.min(num1,num2));
 		System.out.println("The generated number is "+Math.random());
 	}
-}
+} 
