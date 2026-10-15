@@ -1,0 +1,3 @@
+import java.util.*;
+class SortableStudent implements Comparable<SortableStudent>{String name;double score;SortableStudent(String name,double score){this.name=name;this.score=score;}public int compareTo(SortableStudent other){return name.compareToIgnoreCase(other.name);}public String toString(){return name+" ("+score+")";}}
+public class StudentSortingDemo { public static void main(String[] args){List<SortableStudent> list=new ArrayList<>(Arrays.asList(new SortableStudent("Musa",61),new SortableStudent("Ada",88),new SortableStudent("Zainab",74)));Collections.sort(list);System.out.println("By name: "+list);list.sort(Comparator.comparingDouble((SortableStudent s)->s.score).reversed());System.out.println("By score descending: "+list);} }

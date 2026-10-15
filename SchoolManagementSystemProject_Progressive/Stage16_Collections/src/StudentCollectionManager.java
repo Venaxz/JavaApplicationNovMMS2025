@@ -1,0 +1,3 @@
+import java.util.*;
+class StudentCollection { String id,name; StudentCollection(String id,String name){this.id=id;this.name=name;} public String toString(){return id+" - "+name;} }
+public class StudentCollectionManager { public static void main(String[] args){List<StudentCollection> students=new ArrayList<>();students.add(new StudentCollection("ST01","Ada"));students.add(new StudentCollection("ST02","Musa"));Map<String,StudentCollection> byId=new HashMap<>();for(StudentCollection s:students)byId.put(s.id,s);Set<String> departments=new TreeSet<>(Arrays.asList("Computing","Business","Computing"));System.out.println("List: "+students);System.out.println("Search ST02: "+byId.get("ST02"));System.out.println("Unique departments: "+departments);} }

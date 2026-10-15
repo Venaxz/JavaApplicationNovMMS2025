@@ -1,0 +1,2 @@
+import java.util.*; import java.util.function.Predicate;
+public class StudentLambdaDemo { public static void main(String[] args){List<String> names=Arrays.asList("Ada Okafor","Musa Bello","Amaka Obi");names.forEach(name->System.out.println("Student: "+name));Predicate<String> startsWithA=name->name.startsWith("A");System.out.println("Names starting with A:");names.stream().filter(startsWithA).forEach(System.out::println);} }

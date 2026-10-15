@@ -1,0 +1,38 @@
+ASSIGNMENT STAGE MAPPING
+========================
+1-2 Basic input, variables, operators, validation: SchoolManagementSystemProject.java, service/StudentService.java
+3 Loops/result processing: service/ResultService.java
+4 Arrays and traversal: service/ArrayStudentExercises.java
+5 Methods: service classes and model classes
+6-7 Classes, objects, encapsulation: model/*
+8 Inheritance: model/Person.java -> model/Student.java, model/Teacher.java, model/Administrator.java
+9 Abstraction: model/Person.java
+10 Interfaces: api/Payable.java, api/Printable.java, api/Loginable.java, api/Searchable.java
+11 Polymorphism: SchoolManagementSystemProject.java and Person subclasses
+12 Association/aggregation/composition: model/Teacher.java, model/Department.java, model/Student.java
+13 Enums: model/Gender.java, StudentLevel.java, Grade.java, PaymentMethod.java, StudentStatus.java, StaffRole.java
+14 Packages: src package layout
+15 Exceptions: exception/*
+16 Collections: repository/StudentRepository.java and service/StudentService.java
+17 Comparable/Comparator: model/Student.java and service/StudentSortService.java
+18 Lambda expressions/functional interfaces: service/StudentQueryService.java
+19 Stream API: service/StudentQueryService.java
+20 Date/time: model/Student.java, service/DateTimeService.java
+21 File handling: repository/StudentRepository.java, repository/TextFileStore.java
+22 Serialization: util/ObjectSerializer.java
+23-24 JDBC and database relationships: repository/JdbcStudentRepository.java, sql/schema.sql
+25 Login and authorization: service/AuthService.java, model/StaffRole.java
+26 GUI: ui/SchoolManagementWindow.java (Swing)
+27 Multithreading: service/BackgroundTaskService.java
+28 Networking: network/SchoolSocketServer.java and network/SchoolSocketClient.java
+29 HTTP/REST: api/SchoolRestServer.java
+30 Testing: test/SchoolManagementTests.java (dependency-free test runner; JUnit can be added in an IDE/build system)
+31 Logging: util/AppLogger.java
+32 Design patterns: repository/service separation; util/AppConfig.java singleton; model/PersonFactory.java
+33-34 Integration: SchoolManagementSystemProject.java
+
+NOTE
+This is an editable educational project designed to run without third-party libraries.
+The JDBC adapter is a working JDBC implementation template and needs a database driver/URL to connect.
+The REST server is a small educational HTTP endpoint, not a production Spring Boot service.
+The GUI is a basic demonstration and not a complete multi-screen production GUI.

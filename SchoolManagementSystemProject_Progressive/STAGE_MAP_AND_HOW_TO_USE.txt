@@ -1,0 +1,43 @@
+ASSIGNMENT STAGE MAP — MATCHES THE PROVIDED PROJECT BRIEF
+=========================================================
+01 Variables, data types, input/output: Stage01_Basic_Java_Programming
+02 Operators and decision making: Stage02_Decision_Making
+03 Loops and result processing: Stage03_Loops
+04 Arrays and student management: Stage04_Arrays
+05 Methods and refactoring: Stage05_Methods
+06 Classes and objects: Stage06_Classes_And_Objects
+07 Encapsulation: Stage07_Encapsulation
+08 Inheritance: Stage08_Inheritance
+09 Abstraction: Stage09_Abstraction
+10 Interfaces: Stage10_Interfaces
+11 Polymorphism: Stage11_Polymorphism
+12 Association/aggregation/composition: Stage12_Relationships
+13 Enums: Stage13_Enums
+14 Packages: Stage14_Packages (concept note) and FinalIntegratedProject/src package folders
+15 Exception handling: Stage15_Exception_Handling
+16 Collections: Stage16_Collections
+17 Generics: Stage17_Generics
+18 Comparable/Comparator: Stage18_Comparable_Comparator
+19 Lambda expressions: Stage19_Lambda_Expressions
+20 Stream API: Stage20_Stream_API
+21 Date/Time API: Stage21_Date_Time_API
+22 File handling: Stage22_File_Handling
+23 Serialization: Stage23_Serialization
+24 JDBC: Stage24_JDBC (requires a database and matching driver to connect)
+25 SQL/database relationships: Stage25_SQL_Database_Relationships and FinalIntegratedProject/sql/schema.sql
+26 Login and authorization: Stage26_Login_Authorization (educational example)
+27 JavaFX/Swing GUI: Stage27_GUI (Swing)
+28 Multithreading: Stage28_Multithreading
+29 Networking: Stage29_Networking
+30 REST API: Stage30_REST_API (small educational HTTP endpoint)
+31 JUnit testing: Stage31_JUnit_Testing (dependency-free assertions; true JUnit setup requires JUnit dependency)
+32 Logging: Stage32_Logging
+33 Design patterns: Stage33_Design_Patterns
+34 Complete integration: FinalIntegratedProject
+
+HOW THE STAGES CONNECT
+- Each StageXX folder is a separate, editable learning checkpoint. Its named Java class can be compiled/run independently.
+- The stages are intentionally separate so a beginner can run and understand one concept at a time. They are not intended to be compiled together because many contain their own demonstration classes and entry points.
+- FinalIntegratedProject is the connected multi-file application that brings together student registration, results, payments, records, reporting, a basic GUI, networking and an educational REST endpoint.
+- The final entry point is exactly SchoolManagementSystemProject.java / class SchoolManagementSystemProject. Supporting classes remain in named files and package folders; no generic Main class is used.
+- Some advanced items require environment setup: JDBC needs a database and driver; REST uses JDK's jdk.httpserver module; the test stage is a no-dependency executable check rather than JUnit proper. See each stage README and the final project README.

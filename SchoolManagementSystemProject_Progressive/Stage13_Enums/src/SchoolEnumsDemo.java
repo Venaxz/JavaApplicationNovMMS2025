@@ -1,0 +1,2 @@
+enum StudentLevel { LEVEL_100, LEVEL_200, LEVEL_300, LEVEL_400 } enum Gender { FEMALE, MALE, OTHER } enum RegistrationStatus { PENDING, APPROVED, REJECTED }
+public class SchoolEnumsDemo { public static void main(String[] args){StudentLevel level=StudentLevel.LEVEL_200;Gender gender=Gender.FEMALE;RegistrationStatus status=RegistrationStatus.APPROVED;System.out.println("Level: "+level+", Gender: "+gender+", Status: "+status);} }

@@ -1,0 +1,3 @@
+import java.util.*; import java.util.stream.Collectors;
+class StreamResult {String name;int score;StreamResult(String n,int s){name=n;score=s;}}
+public class StudentStreamReports { public static void main(String[] args){List<StreamResult> results=Arrays.asList(new StreamResult("Ada",85),new StreamResult("Musa",39),new StreamResult("Zainab",72),new StreamResult("Chidi",48));List<String> passed=results.stream().filter(r->r.score>=45).map(r->r.name).sorted().collect(Collectors.toList());double average=results.stream().mapToInt(r->r.score).average().orElse(0);System.out.println("Passed students: "+passed);System.out.println("Average score: "+average);System.out.println("Count at least 70: "+results.stream().filter(r->r.score>=70).count());} }

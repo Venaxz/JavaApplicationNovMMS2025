@@ -1,0 +1,3 @@
+interface Printable { void printRecord(); } interface Searchable { boolean matches(String query); }
+class CourseRecord implements Printable,Searchable { private String code,name; CourseRecord(String code,String name){this.code=code;this.name=name;} public void printRecord(){System.out.println(code+" - "+name);} public boolean matches(String q){return code.equalsIgnoreCase(q)||name.equalsIgnoreCase(q);} }
+public class SchoolServiceInterfacesDemo { public static void main(String[] args){CourseRecord c=new CourseRecord("CSC101","Introduction to Java");c.printRecord();System.out.println("Search found: "+c.matches("csc101"));} }

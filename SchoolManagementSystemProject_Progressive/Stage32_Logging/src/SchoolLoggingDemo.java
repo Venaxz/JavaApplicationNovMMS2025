@@ -1,0 +1,2 @@
+import java.util.logging.*;
+public class SchoolLoggingDemo { private static final Logger LOG=Logger.getLogger(SchoolLoggingDemo.class.getName()); public static void main(String[] args){LOG.info("School system started");try{int average=80/2;LOG.info("Sample average calculation completed: "+average);}catch(RuntimeException ex){LOG.log(Level.SEVERE,"Could not process school record",ex);}LOG.warning("This is a demonstration; do not log passwords or sensitive student data.");} }

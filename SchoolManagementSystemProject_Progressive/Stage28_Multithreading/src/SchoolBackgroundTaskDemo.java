@@ -1,0 +1,2 @@
+import java.util.concurrent.*;
+public class SchoolBackgroundTaskDemo { public static void main(String[] args)throws Exception{ExecutorService pool=Executors.newFixedThreadPool(2);try{Future<Integer> count=pool.submit(()->{Thread.sleep(300);return 120;});Future<String> report=pool.submit(()->{Thread.sleep(150);return "Attendance report ready";});System.out.println(report.get());System.out.println("Students processed: "+count.get());}finally{pool.shutdown();}} }

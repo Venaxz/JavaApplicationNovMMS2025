@@ -1,0 +1,2 @@
+import java.nio.file.*; import java.io.IOException; import java.util.*;
+public class StudentFileStorageDemo { public static void main(String[] args)throws IOException{Path file=Paths.get("student-records.txt");List<String> records=Arrays.asList("ST01,Ada Okafor,Computing","ST02,Musa Bello,Business");Files.write(file,records);System.out.println("Saved to: "+file.toAbsolutePath());for(String line:Files.readAllLines(file))System.out.println(line);} }

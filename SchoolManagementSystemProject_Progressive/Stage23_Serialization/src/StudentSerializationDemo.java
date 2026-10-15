@@ -1,0 +1,3 @@
+import java.io.*;
+class SerializableStudent implements Serializable { private static final long serialVersionUID=1L; String id,name; SerializableStudent(String id,String name){this.id=id;this.name=name;} public String toString(){return id+" - "+name;} }
+public class StudentSerializationDemo { public static void main(String[] args)throws Exception{String file="student-object.ser";try(ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream(file))){out.writeObject(new SerializableStudent("ST90","Ada Okafor"));}try(ObjectInputStream in=new ObjectInputStream(new FileInputStream(file))){System.out.println("Restored: "+in.readObject());}} }
